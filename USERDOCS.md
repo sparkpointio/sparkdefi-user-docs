@@ -1,102 +1,70 @@
-## Background
+# SparkDeFi User Document
 
-### What is DeFi? 
+Last modified on October 15, 2021
 
-Decentralized Finance (DeFi) is an umbrella term for an array of financial applications built on top of a blockchain network. With the use of smart contracts, DeFi offers financial services that is open-source, permissionless, and transparent to users. It aims to disrupt the traditional financial system by providing peer-to-peer finance-enabled decentralized applications. This leads to a financial service network that is available to everyone and functions without central authorities.
-
-As of November 2020, the US dollar value of locked in DeFi is 12.81 billion compared in Janury 2020 which was $675.59M. In a span of 10 monhts, the DeFi sector has grown tremendously. 
-
-### What is NFT?
-
-Non-Fungible Token (NFT) is a cryptographic token that represents ownership of a digital or real-world asset. Unlike the fungibility of certain goods that makes it interchangeable and indistinguishable from each other, the element of non-fungibility makes an NFT unique, rare, and indivisible. NFTs can be used as collectibles in art and  gaming or as assets in the virtual world. Famous examples of NFTs are CryptoKitties, Decentraland, and Gods Unchained.  
-
-The popularity of NFTs and its numerous use cases can unlock more potential for DeFi. Most of the DeFi protocols have lending and borrowing solution and using NFTs as collateral is a feasible idea. 
-
-### What is P2P Lending? 
-
-Peer-to-peer (P2P) lending in fintech refers to the exchange of cryptocurrencies via distributed network. A P2P platform allows borrowers and lenders to execute loans without the need of intermediaries. 
-
-Various digital assets can be used as collateral for a loan in P2P platform. The loan is secured through a smart contract. The loan interest rate is based on the amount of cryptocurrency the borrower uses a collateral. Some platforms calculate interest rates on the Loan-to-Value (LTV) of the loan.   
-
-### Yield Farming/Staking
-
-Yield farming is a way to multiply a user’s cryptocurrency using his cryptocurrency holdings. It involves lending funds to borrowers through smart contracts. With this, a user can earn fees or interests in the form of cryptocurrency. Similarly, yield farming can be paralleled with staking. 
-
-Staking is a less resource-intensive alternative to mining. It also involves holding funds in a cryptocurrency wallet to invest in blockchain network operations and security. Just like in yield farming, locking up cryptocurrencies will generate more rewards for the user.  
-
-## Project Introduction 
+## Introduction
 
 ### What is SparkDeFi?
 
-SparkDeFi is a governance token-based DeFi platform that empowers individuals to unlock the true value of their cryptocurrency assets. It offers a Decentralized Exchange (DEX), Multi-Staking, P2P Lending and Borrowing, and DeFi Assets Protocols Management in a seamless, transparent, secure, inclusive, and interoperable approach.
+SparkDeFi is a governance token-based DeFi platform that empowers individuals to unlock the true value of their cryptocurrency assets. It offers a multi-staking pool called SparkPool, a decentralized exchange (DEX) SparkSwap, a blockchain network bridge SparkBridge, a token launch platform called SparkLaunch, and upcoming services like NFT marketplace, P2P lending and borrowing, and DeFi assets protocol management. 
 
-With the SparkDeFi platform, users have the opportunity to choose from different staking options to earn from their assets. They can leverage their crypto assets including Non-Fungible Tokens (NFTs) as collateral while earning from savings pools in P2P Lending. Users can also manage their crypto assets portfolio in our DeFi Assets Protocols Management dashboard.
+SparkDeFi aims to provide a seamless, transparent, secure, inclusive, and interoperable approach to your DeFi needs.
 
-### What are the advantages of SparkDeFi?
+This documentation describes the fundamentals of the available solutions in SparkDeFi and how you can interact with them as a user of the cryptocurrency-based fintech platform.
 
-SparkDeFi has the following advantages: 
+## Basic Overview
 
-* One of the first few projects to adopt Binance Smart Chain
+SparkDeFi is a set of smart contracts on top of the Binance Smart Chain blockchain network. Through smart contracts, you can access various solutions like swapping different cryptocurrencies, staking to get crypto rewards, and likes without a middleman. It is just you directly interacting with the smart contracts and blockchain data using your favorite Web3 provider such as MetaMask, WalletConnect, etc.[You need to have your cryptocurrency wallet pointed to the Binance Smart Chain network](https://medium.com/theecosystem/how-to-access-your-eth-wallet-address-on-bsc-87fdb1fe2448).
 
-&nbsp;&nbsp; Most of the SparkDeFi solutions will run on Binance Smart Chain (BSC) except the SRK-ETH Liquidity Staking. SparkDeFi’s deployment on BSC allows the platform to have faster and cheaper transactions. 
+To get more comprehensive knowledge about SparkDeFi, read its [white paper](https://github.com/sparkpointio/sparkdefi-whitepaper/blob/main/WHITEPAPER.md).
 
-* Fully transparent, non-pseudonymous team that has good track record
+## What are the available solutions in SparkDeFi?
 
-&nbsp;&nbsp; The SparkPoint team, the group behind SparkDeFi, has good track record of launching blockchain-based products and services like SparkPoint Wallet, SparkLearn, SparkPlay, and SparkEarn. 
+**SparkBridge** allows the conversion of tokens between two blockchain networks. In this case, SparkBridge makes it possible to convert your SRK, an ERC-20 token in Ethereum, to SRKb, a BEP-20 token in Binance Smart Chain. 
 
-* Location of the company
+[Read the step-by-step tutorial on how to use SparkBridge](https://medium.com/theecosystem/how-to-convert-srk-erc-20-to-srkb-bep-20-using-sparkbridge-7faca2286c620). 
 
-&nbsp;&nbsp; SparkPoint Innovations Inc., the company that developed SparkDeFi, is situated in the Philippines. The company is taking advantage of the the Philippine government’s openness in accepting blockchain and cryptocurrency technologies. 
+**SparkPool** offers multi-staking options for you to earn cryptocurrency rewards. It has Liquidity Staking wherein you need to provide liquidity to a token pair like SRKb-BNB to get SRKb-BNB Spark Liquidity Pool Tokens to get a share from the SRKb-BNB Liquidity Pool whenever a swap between these two cryptocurrencies occur in SparkSwap, the DEX.
 
-* Existing SRK token 
+Meanwhile, in Pool-Based Staking, you don’t need to provide liquidity to get liquidity pool tokens for you to stake. All you need is  SRKb, SFUEL, or a cryptocurrency with an active pool in Pool-Based Staking, and BNB for the transaction fee or popularly known as a gas fee. 
 
-&nbsp;&nbsp; The SRK token is one of the few tokens with a return on investment (ROI) of over 1,000% according to CoinMarketCap and CoinGecko. SRK leads the BitMart’s 2020 Top 10 Crypto Gainers with 4,553.25% year-to-date return rate in USDT. 
+Another thing to take note of, providing liquidity to a liquidity pool can be a rewarding endeavor, but you’ll need to keep the concept of impermanent loss in mind. You can learn more about it at Binance Academy’s [article](https://academy.binance.com/en/articles/impermanent-loss-explained).
 
-### What is SparkDeFi trying to solve?
+**SparkPool Annual Percentage Rate (APR) calculations:**
 
-SparkDeFi aims to bring the world closer to a utopian society built on top of a strong free market and away from disproportionately high commission charging intermediaries that serve antiquated purposes. 
+**Liquidity Staking**
 
-Furthermore, SparkDeFi addresses the following concerns in DeFi:
+FarmAPR = ( RewardTokenPrice * RewardRate * SecondsPerYear ) / ( LPTokenPrice * TotalStakedTokenInPool ) * 100
+LPTokenPrice: $2.72 ( ex: SRK-BNB SparkLP with $451,256 total liquidity and 166,205.76 total supply as of 10/04/21 )
+RewardTokenPrice: $0.06115 ( ex: 1 SRK = $0.06115 as of 10/04/21 )
+SecondsPerYear: 31556926
 
-* SparkDeFi addresses the lack of interoperability by choosing Binance Smart Chain to power its platform because it can support users across multiple blockchains. 
+**Pool-Based Staking**
+PoolAPR = ( RewardTokenPrice * RewardTokenPerBlock * BSCBlocksPerYear ) / ( StakingTokenPrice * TotalStakedTokenInPool ) * 100
+StakingTokenPrice: $0.00403 ( ex: 1 SRK = $0.00403 as of 10/04/21 )
+RewardTokenPrice: $0.06115 ( ex: 1 SRK = $0.06115 as of 10/04/21 )
+BSCBlocksPerYear: 10512000
 
-* SparkDeFi revolutionizes P2P Lending by allowing various cryptocurrency assets like altcoins, Non-Fungible Tokens (NFTs), and crypto-collectibles like game items, virtual estate, and digital art as collateral which are currently untapped by the existing DeFi lending protocols.
+Here are the following tutorials on how to use SparkPool:
+[How to Participate in Pool-Based Staking](https://medium.com/theecosystem/how-to-participate-in-pool-based-staking-50e830217282)
+[How to Stake SRK-ETH pool Tokens in SparkDeFi](https://medium.com/theecosystem/how-to-stake-srk-eth-pool-tokens-in-sparkdefi-1a2d0cf51d9b)
 
-* SparkDeFi supports financial inclusion by offering a more all-encompassing approach in terms of lending. These approaches include a lower barrier to entry, minimal loan-to-value (LTV) ratio, and microlending which serves as another provision in solving overcollateralization through small, low-interest loans to borrowers. 
+**SparkSwap** enables you to swap multiple BEP-20 cryptocurrencies in a trustless and decentralized manner. It is a DEX built on top of the Binance Smart Chain. 
 
-### Solutions
+The liquidity you provide in a decentralized exchange is considered the lifeline of all transactions. Without liquidity between two cryptocurrencies, there will be no tokens to exchange in a DEX.
 
-Decentralized Exchange
+In SparkSwap, the fee per swap is 0.17% of which goes to the liquidity providers as an incentive. If you have provided liquidity in a certain liquidity pool (LP) like SFUEL-BNB, SFUEL-BUSD, SRKb-BNB, or others, then you get a share of the fees which are accumulated during every swap in the said DEX. The share is based on the proportion you have contributed to the LP.
 
-* Our own Decentralized Exchange (DEX) for a “one-stop-shop” DeFi experience is called SparkSwap
-
-* Instantly swap multiple cryptocurrencies in a trustless and decentralized manner
-
-* Earn from the transaction fees when you provide liquidity
-
-### Multi-Staking
-
-* Participate in the SRK-ETH and SFUEL-ETH liquidity staking pools and earn SRK or SFUEL, a SparkDeFi governance token
-
-* Stake SRK tokens or SFUEL in our regular pool-based staking and collect SRK or SFUEL rewards on a regular basis
-
-### P2P Lending and Borrowing
-
-* Use altcoins and Non-Fungible Tokens (NFTs) or cryptocollectibles such as game items, virtual estate, and digital artworks as collateral
-
-* Microlending to democratize finance and promote financial inclusion
-
-* Generate a stream of cash flow through the liquidity savings pool
-
-### DeFi Assets Protocols Management
-
-* Seamlessly access and connect to various DeFi projects for an end-to-end DeFi experience
-
-* Manage assets portfolio and collateralized debt positions (CDPs) in a simple and user-friendly dashboard
+Example:
+There are 10 LP tokens representing 10 SRKb and 10 BNB tokens.
+1 LP token = 1 SRKb + 1 BNB
+Someone trades 10 SRKb for 10 BNB.
+Someone else trades 10 BNB for 10 SRKb.
+The SRKb/BNB liquidity pool now has 10.017 SRKb and 10.017 BNB.
+Each LP token is now worth 1.00017 SRKb + 1.00017 BNB.
 
 
-### Governance Token
-### Use Cases
-### Token Economics
+Learn more about SparkSwap at the following links:
 
-
+[A Beginner’s Guide to SparkSwap](https://medium.com/theecosystem/a-beginners-guide-to-sparkswap-79f92a2f7074)
+[Providing Liquidity in SparkSwap](https://medium.com/theecosystem/providing-liquidity-in-sparkswap-9f51ddb74bb7)
